@@ -1,0 +1,6 @@
+{
+  "title": "首页",
+  "greet": "您好~",
+  "picktime": "选择一个时间",
+  "sayHello": "你好 {name}"
+}
