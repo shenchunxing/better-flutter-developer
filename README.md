@@ -2,8 +2,9 @@
  - [Flutter面试题1](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter面试题.md) 
 
 
-## Flutter第三方框架解析文章
- - [FlutterBoost](https://juejin.cn/post/7170997208223842312?searchId=20230721153250FA93535468570BBB7814#heading-9) 
+## Flutter解析文章
+ - [FlutterBoost源码](https://juejin.cn/post/7170997208223842312?searchId=20230721153250FA93535468570BBB7814#heading-9) 
+ - [Flutter异步编程系列文章](https://juejin.cn/column/7141354641874223112) 
 
 
 ## Flutter常用知识点
