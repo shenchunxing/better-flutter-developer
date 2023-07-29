@@ -14,7 +14,8 @@
 
 
 ## 常用知识点和原理
- - [Flutter之key的使用](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter之key的使用.md) 
+ - [Flutter的核心原理](https://book.flutterchina.club/chapter14/)
+ - [深入浅出Key](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter之key的使用.md) 
  - [Flutter适配深色模式](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter适配深色模式.md) 
  - [Flutter性能优化之RepaintBoundary](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter性能优化之RepaintBoundary.md) 
  - [Flutter一些Tips](https://github.com/shenchunxing/better-flutter-developer/blob/master/flutter_tips.md) 

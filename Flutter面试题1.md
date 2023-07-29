@@ -52,9 +52,6 @@ Flutter应用的事件循环机制确保了UI渲染和逻辑处理的异步执�
 更新依赖库版本：
 确保使用最新版本的Flutter和相关依赖库，以获得性能改进和Bug修复。
 
-待整理文章：
-[超级全面的Flutter性能优化实践](https://juejin.cn/post/7145730792948252686?searchId=2023072810021848AD564BE2C58A87978C#heading-9)
-[淘特 Flutter 流畅度优化实践](https://juejin.cn/post/7046305749097512997?searchId=20230728100804392A9B8AC091F08ABF5A)
 
 ### Flutter页面出现内存问题，怎么查找原因？
 
@@ -72,7 +69,7 @@ Flutter应用的事件循环机制确保了UI渲染和逻辑处理的异步执�
 
 使用辅助工具：除了Flutter DevTools，还可以使用其他第三方工具和插件来检测和优化内存问题。例如，flutter_memory_monitor插件可以帮助您在应用程序运行时监控内存使用情况。
 
-更新Flutter和依赖库：确保您正在使用最新版本的Flutter和相关依赖库，以便获得已解决的问题和性能改进。
+更新Flutter和依赖库：确保您正在使用最新版本的Flutter和相关依赖库，以便获得已解决的问题和性能改进。（Dolynk Care出现过CurpontinePicker在flutter3.0.3版本上快速滚动卡死的问题）
 
 测试不同设备和配置：有时，内存问题可能在某些设备或配置上更为明显。尝试在不同的设备和配置上测试您的应用程序，以确保性能和内存使用情况在各种情况下都能得到处理。
 
@@ -207,6 +204,29 @@ StatefulWidget 的生命周期方法及其调用顺序：
 
 需要注意的是，StatefulWidget 的生命周期方法在 State 对象中定义，而且生命周期方法的调用顺序是固定的，遵循上述顺序。根据不同的场景和需求，可以在合适的生命周期方法中执行相应的操作，以确保应用程序的状态和 UI 的正确更新。
 
+### didChangeDependencies和didUpdateWidget的区别？
+
+didChangeDependencies和didUpdateWidget是Flutter中的两个生命周期函数，用于处理Widget状态的变化。它们之间有一些区别：
+
+didChangeDependencies:
+
+当一个StatefulWidget依赖的InheritedWidget（或其他类似情况）发生变化时，会触发didChangeDependencies生命周期函数。
+在这个方法中，您可以根据新的InheritedWidget来更新State的状态，或者执行与新依赖项相关的一些操作。
+这个方法在以下几种情况下都会被调用：
+在initState之后被调用。
+当该State依赖的父级InheritedWidget发生更改时。
+当路由切换时，当前State所在的页面被覆盖或弹出，导致其依赖的InheritedWidget发生变化。
+didUpdateWidget:
+
+当一个StatefulWidget被重新构建时（即它的build方法被调用），Flutter框架就会调用didUpdateWidget方法。
+这个方法允许您在接收到新的Widget实例后，根据新的Widget更新State的状态。
+这通常在父级Widget发生变化，且影响到StatefulWidget时发生，但并不总是与InheritedWidget相关。
+主要区别：
+
+didChangeDependencies在依赖的InheritedWidget发生变化时被调用，主要用于处理全局数据、主题等变化，并在State依赖发生变化时做出响应。
+didUpdateWidget在StatefulWidget的build方法被调用时被触发，主要用于处理Widget实例的更新，比如父级Widget的变化导致子级Widget重新构建，但与依赖项的变化无直接关系。
+总结：didChangeDependencies用于处理全局性的依赖变化，而didUpdateWidget用于处理局部性的Widget变化
+
 ### Flutter是如何做到一套Dart代码可以编译运行在Android和iOS平台的？所以说具体的原理?
 -   Skia绘制，实现跨平台应用层渲染一致性
 -   Method Channel 机制
@@ -214,16 +234,6 @@ StatefulWidget 的生命周期方法及其调用顺序：
 为了解决调用原生系统底层能力以及相关代码库复用问题，Flutter 为开发者提供了一个轻量级的解决方案，即逻辑层的方法通道（Method Channel）机制。基于方法通道，我们可以将原生代码所拥有的能力，以接口形式暴露给 Dart，从而实现 Dart 代码与原生代码的交互，就像调用了一个普通的 Dart API 一样。
 
 ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b8435483710f4fb0b07d08856cfd4d3c~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp)
-
-**Flutter定义了三种不同类型的Channel**
-
--   BasicMessageChannel：用于传递字符串和半结构化的信息。
--   MethodChannel：用于传递方法调用（method invocation）。
--   EventChannel: 用于数据流（event streams）的通信。
-
-**注意**
-
-Method Channel 是非线程安全的。原生代码在处理方法调用请求时，如果涉及到异步或非主线程切换，需要确保回调过程是在原生系统的 UI 线程（也就是 Android 和 iOS 的主线程）中执行的，否则应用可能会出现奇怪的 Bug，甚至是 Crash。
 
 ### 什么是 Widgets、RenderObjects 和 Elements？
 在Flutter中，Widgets、RenderObjects和Elements是构建用户界面的三个核心概念。它们相互关联，并共同构成了Flutter UI的基础。下面对它们进行简要解释：
