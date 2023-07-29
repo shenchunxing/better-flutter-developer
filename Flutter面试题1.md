@@ -332,3 +332,29 @@ Flutter 的编译流程可以简要概括为以下几个主要步骤：
 
 ### Flutter 图片加载过程？
 [Flutter 图片加载过程](https://juejin.cn/post/6844903817918545928?searchId=2023072115262304465D22831B65B5736C)
+
+### Flutter的3种channel有什么区别？
+MethodChannel:
+MethodChannel 是最常用的 Channel 类型，它用于在 Dart 和原生代码之间进行单向方法调用。通过 MethodChannel，Dart 代码可以调用原生代码中的方法，并传递参数。原生代码执行相应的任务后，可以通过回调方法将结果传递回 Dart 端。（比如：获取电池电量）
+适用场景：
+在 Dart 和原生代码之间进行简单的方法调用和参数传递。
+调用原生平台的API，如传感器、相机等。
+
+EventChannel:
+EventChannel 用于在 Dart 和原生代码之间进行单向的数据流通，通常是由原生代码向 Dart 端发送事件流。这种 Channel 类型常用于一些实时数据或原生事件的传递，例如传感器数据、位置信息等。（比如实时获取电池电量）
+适用场景：
+在 Dart 中接收原生平台发送的实时数据或事件。
+原生代码产生的数据流需要及时通知到 Flutter 侧。
+
+BasicMessageChannel:
+BasicMessageChannel 是一种通用的 Channel 类型，它支持在 Dart 和原生代码之间进行双向通信。通过 BasicMessageChannel，可以传递序列化后的简单数据结构（如字符串或字节数组）。（比如：dart端发送消息给原生，原生接收到后，也可以回复给dart）
+适用场景：
+在 Dart 和原生代码之间进行双向通信，交换简单数据结构。
+自定义通信协议，以满足特定需求。
+综上所述，Flutter中的三种 Channel 分别适用于不同的通信需求：
+
+MethodChannel用于在 Dart 和原生代码之间进行方法调用和参数传递。
+EventChannel用于在 Dart 中接收原生平台产生的实时数据或事件。
+BasicMessageChannel用于在 Dart 和原生代码之间进行双向通信，交换简单数据结构。
+
+
