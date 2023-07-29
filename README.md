@@ -1,16 +1,30 @@
-## Flutter面试题
+## 面试题
  - [Flutter面试题1](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter面试题1.md) 
 
-
-## Flutter解析文章
+## 文章解析
  - [FlutterBoost源码](https://juejin.cn/post/7170997208223842312?searchId=20230721153250FA93535468570BBB7814#heading-9) 
  - [Flutter异步编程系列文章](https://juejin.cn/column/7141354641874223112) 
 
 
-## Flutter常用知识点
+## 性能优化 
+ - [超级全面的Flutter性能优化实践](https://juejin.cn/post/7145730792948252686?searchId=2023072810021848AD564BE2C58A87978C#heading-9)
+ - [淘特 Flutter 流畅度优化实践](https://juejin.cn/post/7046305749097512997?searchId=20230728100804392A9B8AC091F08ABF5A)
+ - [ListView流畅度翻倍！！Flutter卡顿分析和通用优化方案](https://juejin.cn/post/6940134891606507534?searchId=20230728100804392A9B8AC091F08ABF5A)
+ - [Flutter如何设计一个高性能，多功能的ListView组件](https://juejin.cn/post/6937177138046959652)
+
+
+## 常用知识点和原理
  - [Flutter之key的使用](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter之key的使用.md) 
  - [Flutter适配深色模式](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter适配深色模式.md) 
  - [Flutter性能优化之RepaintBoundary](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter性能优化之RepaintBoundary.md) 
+ - [Flutter一些Tips](https://github.com/shenchunxing/better-flutter-developer/blob/master/flutter_tips.md) 
+ - [理解布局约束](https://flutter.cn/docs/development/ui/layout/constraints)
+ - [花两天时间做了15个例子的解析，彻底掌握Flutter的布局原理](https://juejin.cn/post/6916157915590033421)
+ - [面试官问我State的生命周期，该怎么回答](https://juejin.cn/post/6908574202253541389)
+ - [原来我一直在错误的使用 setState()?](https://juejin.cn/post/6905996819445055495)
+ - [告别setState()！ 优雅的UI与Model绑定 Flutter DataBus使用~](https://juejin.cn/post/6868104488109604871)
+ - [深入进阶-Flutter导航Navigator操作解析](https://juejin.cn/post/6893699139490545672)
+ - [深入进阶-从一次点击探寻Flutter事件分发原理](https://juejin.cn/post/6895991156204404750)
 
 ## 学习资源和第三方框架
 - [Flutter中文网](https://book.flutterchina.club)
@@ -53,3 +67,21 @@
 - [retrofit](https://pub.flutter-io.cn/packages/retrofit) - 是一个dio客户端生成器使用source_gen和灵感来自Chopper和Retrofit
 - [equatable](https://pub.flutter-io.cn/packages/equatable) - 帮助实现基于值的相等性，而不需要显式地重写==和hashCode。
 
+
+## 快捷键
+```
+1、stless  快速创建StatelessWidget的子类
+2、stful  快速创建StatefulWidget的子类
+3、command + option + B，查看抽象类或方法的子类实现
+4、command + option + T，有时需要在一些代码外面加上if、for、while等代码，快速调出环绕代码
+5、command + option + W，抽取Widget
+6、command + option + M，抽取代码
+7、command + option + L，格式化代码
+8、command + shift + N，新建Dart文件【Scratch File 快捷键command + shift + N删除】
+9、command + shift + Enter，if后面自动加(){}
+10、commond + d 快速复制一行
+11、option + shift + 上下键，移动代码
+12、option + enter，将widget自动包裹一层widget或删除这层widget
+StatelessWidget转StatefulWidget
+快速导包
+```
