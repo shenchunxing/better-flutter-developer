@@ -15,6 +15,7 @@
 
 ## 常用知识点和原理
  - [Flutter的核心原理](https://book.flutterchina.club/chapter14/)
+ - [深入理解BuildContext](https://juejin.cn/post/6844903777565147150)
  - [深入浅出Key](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter之key的使用.md) 
  - [Flutter适配深色模式](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter适配深色模式.md) 
  - [Flutter性能优化之RepaintBoundary](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter性能优化之RepaintBoundary.md) 
@@ -26,6 +27,11 @@
  - [告别setState()！ 优雅的UI与Model绑定 Flutter DataBus使用~](https://juejin.cn/post/6868104488109604871)
  - [深入进阶-Flutter导航Navigator操作解析](https://juejin.cn/post/6893699139490545672)
  - [深入进阶-从一次点击探寻Flutter事件分发原理](https://juejin.cn/post/6895991156204404750)
+ - [Dart 进阶 | 深入理解方法与闭包](https://juejin.cn/post/6844904149058846734) 
+ - [什么是Stream](https://juejin.cn/post/6844903686737494023)
+
+## 优秀的githuber开发者
+- [OpenFlutter](https://github.com/OpenFlutter)
 
 ## 学习资源和第三方框架
 - [Flutter中文网](https://book.flutterchina.club)
