@@ -1,5 +1,36 @@
 # Flutter Tips
 
+### 多语言本地化
+在pubspec.yaml上
+```
+  flutter_localizations:
+    sdk: flutter
+```
+```
+import 'package:flutter_localizations/flutter_localizations.dart';
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Deer',
+      home: SplashPage(),
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        const Locale('zh', 'CN'),
+        const Locale('en', 'US')
+      ]
+    );
+  }
+}
+
+```
+
+### 尽量指定文字大小以避免不必要的文字语言不同导致大小不同的问题。
+
 ### .Zone的使用
 `Dart` 中可通过 `Zone` 表示指定代码执行的环境，类似一个沙盒概念，在 `Flutter` 中 **C++** 运行 `Dart` 也是在 `_runMainZoned` 内执行 `runZoned` 方法启动，而我们也可以通过 `Zone` ，在运行环境内捕获全局异常等信息:
 

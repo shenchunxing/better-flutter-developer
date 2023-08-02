@@ -19,7 +19,7 @@
  - [深入浅出Key](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter之key的使用.md) 
  - [Flutter适配深色模式](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter适配深色模式.md) 
  - [Flutter性能优化之RepaintBoundary](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter性能优化之RepaintBoundary.md) 
- - [Flutter一些Tips](https://github.com/shenchunxing/better-flutter-developer/blob/master/flutter_tips.md) 
+ - [Flutter常用小技巧](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter常用小技巧.md) 
  - [理解布局约束](https://flutter.cn/docs/development/ui/layout/constraints)
  - [花两天时间做了15个例子的解析，彻底掌握Flutter的布局原理](https://juejin.cn/post/6916157915590033421)
  - [面试官问我State的生命周期，该怎么回答](https://juejin.cn/post/6908574202253541389)
@@ -29,6 +29,7 @@
  - [深入进阶-从一次点击探寻Flutter事件分发原理](https://juejin.cn/post/6895991156204404750)
  - [Dart 进阶 | 深入理解方法与闭包](https://juejin.cn/post/6844904149058846734) 
  - [什么是Stream](https://juejin.cn/post/6844903686737494023)
+ - [InheritedWidget 源码分析](https://juejin.cn/post/6919469982170480654)
 
 ## 优秀的githuber开发者
 - [OpenFlutter](https://github.com/OpenFlutter)

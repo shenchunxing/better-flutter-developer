@@ -4,6 +4,18 @@
 -   技术支持：现在Google正在大力推广Flutter，Flutter的作者中很多人都是来自Chromium团队，并且github上活跃度很高。
 -   开发效率：Flutter的热重载可帮助开发者快速地进行测试、构建UI、添加功能并更快地修复错误。在iOS和Android模拟器或真机上可以实现毫秒级热重载，并且不会丢失状态。
 
+### 为什么 build 方法放在 State 中而不是在 StatefulWidget 中？
+职责分离：build 方法实际上是用来构建 UI 视图的，而 StatefulWidget 本身并不涉及 UI 的渲染。UI 渲染是 State 的责任，因为它保存了组件的状态信息，并在需要时进行重建和刷新。StatefulWidget 负责管理组件的不变属性，而 State 负责管理组件的可变状态和构建 UI 视图。
+
+### 如果 build 方法放在 StatefulWidget 中，会有什么问题？
+1.不便于管理状态： 如果 build 方法直接放在 StatefulWidget 中，那么每次需要更新 UI 时都会重新构建整个组件树，包括不可变属性和可变状态。这样会导致状态的混乱和不易管理。而将 build 方法放在 State 中，可以更好地管理组件的状态信息，使得状态和逻辑独立出来。
+
+2.性能问题： 将 build 方法放在 StatefulWidget 中会导致不必要的重建。即使在不需要更新 UI 的情况下，每次 StatefulWidget 被重建都会调用 build 方法，这会造成性能浪费。
+
+3.代码可读性： 代码的可读性也会受到影响。将 build 方法放在 StatefulWidget 中，会让 StatefulWidget 既承担状态管理的责任又承担 UI 构建的责任，使得代码逻辑难以理解和维护。
+
+4.不利于框架扩展： Flutter 框架通过将 build 方法放在 State 中，实现了组件的灵活扩展和定制。我们可以继承 State 来创建自定义的状态对象，并在 build 方法中实现自定义的 UI 构建逻辑，从而更好地实现组件的复用和定制化。
+
 ### Flutter怎么做到并发？
 Flutter在执行UI渲染和逻辑处理时，是单线程的。这意味着在Flutter应用中，UI渲染和逻辑处理是在同一个线程上顺序执行的。
 
@@ -32,7 +44,7 @@ Flutter应用的事件循环机制确保了UI渲染和逻辑处理的异步执�
 避免不必要的Widget重建可以显著提高性能。使用const关键字创建静态不变的Widget，或者使用const构造函数来创建Widget，这样可以避免重复创建相同的Widget。
 
 使用Keys：
-在ListView或GridView等可滚动列表中，使用Key来标识每个列表项。这样可以帮助Flutter更好地识别和管理列表项的状态变化，避免不必要的重建。
+在ListView或GridView等可滚动列表中，使用Key来标识每个列表项。这样可以帮助Flutter更好地识别和管理列表项的状态变化，避免不必要的重建。高度固定的情况下使用itemExtent比内部子组件计算高效得多。
 
 异步加载：
 在加载图片、网络请求等耗时操作时，使用异步加载来避免阻塞UI线程。可以使用FutureBuilder或StreamBuilder来处理异步数据加载。
@@ -51,6 +63,27 @@ Flutter应用的事件循环机制确保了UI渲染和逻辑处理的异步执�
 
 更新依赖库版本：
 确保使用最新版本的Flutter和相关依赖库，以获得性能改进和Bug修复。
+
+关于 AnimatedBuilder TweenAnimationBuilder 的优化
+```
+AnimatedBuilder(
+    animation: animation,
+    builder: (BuildContext context, Widget child) {
+      return Transform.rotate(
+        angle: animation.value,
+        child: child,//不要写在这里FlutterLogo(size: 60,)
+      );
+    },
+    child: FlutterLogo(size: 60,),//写在这里更高效
+  )
+
+```
+
+关于Opacity
+```
+ Container(color: Color.fromRGBO(255, 0, 0, 0.5))比
+ Opacity(opacity: 0.5, child: Container(color: Colors.red))更高效
+```
 
 
 ### Flutter页面出现内存问题，怎么查找原因？
