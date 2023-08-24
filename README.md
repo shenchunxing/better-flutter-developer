@@ -2,7 +2,7 @@
  - [Flutter面试题1](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter面试题1.md) 
 
 ## Flutter原理
- - [Flutter的热重载到底是如何实现的呢?](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter的热重载到底是如何实现的呢?.md)
+ -  新增Flutter是怎么实现热重载的？https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter热重载是怎么实现的？
  - [Element、BuildContext和RenderObject](https://book.flutterchina.club/chapter14/element_buildcontext.html)
  - [Flutter事件机制](https://book.flutterchina.club/chapter8/hittest.html#_8-3-1-flutter-事件处理流程)
  - [手势原理和手势冲突](https://book.flutterchina.club/chapter8/gesture_conflict.html#_8-4-1-手势识别原理) 
