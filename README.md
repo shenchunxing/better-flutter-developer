@@ -1,20 +1,18 @@
 ## 面试题
  - [Flutter面试题1](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter面试题1.md) 
 
-## 文章解析
- - [FlutterBoost源码](https://juejin.cn/post/7170997208223842312?searchId=20230721153250FA93535468570BBB7814#heading-9) 
- - [Flutter异步编程系列文章](https://juejin.cn/column/7141354641874223112) 
-
-
-## 性能优化 
- - [超级全面的Flutter性能优化实践](https://juejin.cn/post/7145730792948252686?searchId=2023072810021848AD564BE2C58A87978C#heading-9)
- - [淘特 Flutter 流畅度优化实践](https://juejin.cn/post/7046305749097512997?searchId=20230728100804392A9B8AC091F08ABF5A)
- - [ListView流畅度翻倍！！Flutter卡顿分析和通用优化方案](https://juejin.cn/post/6940134891606507534?searchId=20230728100804392A9B8AC091F08ABF5A)
- - [Flutter如何设计一个高性能，多功能的ListView组件](https://juejin.cn/post/6937177138046959652)
-
-
-## 常用知识点和原理
- - [Flutter的核心原理](https://book.flutterchina.club/chapter14/)
+## Flutter原理
+ - [Flutter的热重载到底是如何实现的呢?](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter的热重载到底是如何实现的呢?.md)
+ - [Element、BuildContext和RenderObject](https://book.flutterchina.club/chapter14/element_buildcontext.html)
+ - [Flutter事件机制](https://book.flutterchina.club/chapter8/hittest.html#_8-3-1-flutter-事件处理流程)
+ - [手势原理和手势冲突](https://book.flutterchina.club/chapter8/gesture_conflict.html#_8-4-1-手势识别原理) 
+ - [通知 Notification](https://book.flutterchina.club/chapter8/notification.html#_8-6-1-监听通知)
+ - [Flutter启动流程和渲染管线](https://book.flutterchina.club/chapter14/flutter_app_startup.html)
+ - [布局（Layout）过程](https://book.flutterchina.club/chapter14/layout.html)
+ - [绘制（一）绘制原理及Layer](https://book.flutterchina.club/chapter14/paint.html)
+ - [绘制（二）组件树绘制流程](https://book.flutterchina.club/chapter14/paint_flow.html)
+ - [绘制（三）Layer 实例](https://book.flutterchina.club/chapter14/layer.html)
+ - [绘制（四）Compositing](https://book.flutterchina.club/chapter14/compositing.html)
  - [深入理解BuildContext](https://juejin.cn/post/6844903777565147150)
  - [深入浅出Key](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter之key的使用.md) 
  - [Flutter适配深色模式](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter适配深色模式.md) 
@@ -30,14 +28,29 @@
  - [Dart 进阶 | 深入理解方法与闭包](https://juejin.cn/post/6844904149058846734) 
  - [什么是Stream](https://juejin.cn/post/6844903686737494023)
  - [InheritedWidget 源码分析](https://juejin.cn/post/6919469982170480654)
+ - [Flutter之全埋点思考与实现](https://juejin.cn/post/6892371163859976199?searchId=2023080408513547E69007A055DA6444FD) 
+ - [Flutter | 状态管理拓展篇——RxDart](https://juejin.cn/post/6844903700733886471)
+ - [应用性能最佳实践](https://flutter.cn/docs/perf/best-practices)
 
-## 优秀的githuber开发者
-- [OpenFlutter](https://github.com/OpenFlutter)
+## 学习资源 
+ - [Flutter中文开发者](https://flutter.cn)
+ - [Flutter中文网](https://book.flutterchina.club)
+ - [老孟Flutter](http://laomengit.com)
 
-## 学习资源和第三方框架
-- [Flutter中文网](https://book.flutterchina.club)
-- [老孟Flutter](http://laomengit.com)
--   [flutter_deer](https://github.com/simplezhli/flutter_deer) - 完整flutter项目
+
+## 文章解析
+ - [FlutterBoost源码](https://juejin.cn/post/7170997208223842312?searchId=20230721153250FA93535468570BBB7814#heading-9) 
+ - [Flutter异步编程系列文章](https://juejin.cn/column/7141354641874223112) 
+
+
+## 性能优化 
+ - [超级全面的Flutter性能优化实践](https://juejin.cn/post/7145730792948252686?searchId=2023072810021848AD564BE2C58A87978C#heading-9)
+ - [淘特 Flutter 流畅度优化实践](https://juejin.cn/post/7046305749097512997?searchId=20230728100804392A9B8AC091F08ABF5A)
+ - [ListView流畅度翻倍！！Flutter卡顿分析和通用优化方案](https://juejin.cn/post/6940134891606507534?searchId=20230728100804392A9B8AC091F08ABF5A)
+ - [Flutter如何设计一个高性能，多功能的ListView组件](https://juejin.cn/post/6937177138046959652)
+
+## 第三方框架
+- [flutter_deer](https://github.com/simplezhli/flutter_deer) - 完整flutter项目
 - [gsy_github_app_flutter](https://github.com/CarGuo/gsy_github_app_flutter) - Flutter 超完整的开源项目，功能丰富，适合学习和日常使用。GSYGithubApp系列的优势：我们目前已经拥有Flutter、Weex、ReactNative、kotlin 四个版本。 功能齐全，项目框架内技术涉及面广，完成度高，持续维护，配套文章，适合全面学习，对比参考。跨平台的开源Github客户端App，更好的体验，更丰富的功能，旨在更好的日常管理和维护个人Github，提供更好更方便的驾车体验Σ(￣。￣ﾉ)ﾉ。
 - [pull_to_refresh](https://pub.flutter-io.cn/packages/pull_to_refresh) - 提供给滚动组件的小部件下拉刷新和拉起加载。
 - [get](https://pub.flutter-io.cn/packages/get) - 在没有上下文的情况下打开屏幕/零食条/对话框，使用GetX轻松管理状态和注入依赖项。
