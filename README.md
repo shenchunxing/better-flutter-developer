@@ -3,7 +3,13 @@
 
 ## Flutter原理
  -  新增Flutter是怎么实现热重载的？https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter热重载是怎么实现的？
- -  新增理解Widget、Element、RenderObject https://github.com/shenchunxing/better-flutter-developer/wiki/理解Widget、Element、RenderObject
+ -  新增理解Widget、Element、RenderObject  https://github.com/shenchunxing/better-flutter-developer/wiki/理解Widget、Element、RenderObject
+ -  新增Flutter启动流程 https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter启动流程
+ -  新增Flutter渲染机制(管线) https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter渲染机制(管线)
+ -  新增合理使用RepaintBoundary可以减少重绘、提高性能 https://github.com/shenchunxing/better-flutter-developer/wiki/合理使用RepaintBoundary可以减少重绘、提高性能
+ -  新增如何正确使用key？ https://github.com/shenchunxing/better-flutter-developer/wiki/如何正确使用key？
+ -  新增项目中适配深色模式的方案 https://github.com/shenchunxing/better-flutter-developer/wiki/项目中适配深色模式的方案
+ -  新增项目开发过程中的一些小技巧 https://github.com/shenchunxing/better-flutter-developer/wiki/项目开发过程中的一些小技巧
  - [Element、BuildContext和RenderObject](https://book.flutterchina.club/chapter14/element_buildcontext.html)
  - [Flutter事件机制](https://book.flutterchina.club/chapter8/hittest.html#_8-3-1-flutter-事件处理流程)
  - [手势原理和手势冲突](https://book.flutterchina.club/chapter8/gesture_conflict.html#_8-4-1-手势识别原理) 
