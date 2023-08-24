@@ -3,6 +3,7 @@
 
 ## Flutter原理
  -  新增Flutter是怎么实现热重载的？https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter热重载是怎么实现的？
+ -  新增理解Widget、Element、RenderObject https://github.com/shenchunxing/better-flutter-developer/wiki/理解Widget、Element、RenderObject
  - [Element、BuildContext和RenderObject](https://book.flutterchina.club/chapter14/element_buildcontext.html)
  - [Flutter事件机制](https://book.flutterchina.club/chapter8/hittest.html#_8-3-1-flutter-事件处理流程)
  - [手势原理和手势冲突](https://book.flutterchina.club/chapter8/gesture_conflict.html#_8-4-1-手势识别原理) 
