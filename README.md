@@ -1,6 +1,6 @@
 ## 持续更新
  -  [Flutter面试题1](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter面试题1.md)
- -  新增一个关于flutter布局的用例 https://github.com/shenchunxing/better-flutter-developer/blob/master/flutter_layout_article-master
+ -  新增极客时间专栏《Flutter核心技术与实战》,代码太多，需要找时间整理下 (https://github.com/cyndibaby905/flutter_core_demo)
  -  新增一个好用的登录页面 https://github.com/shenchunxing/better-flutter-developer/blob/master/login_app
  -  新增Flutter是怎么实现热重载的？https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter热重载是怎么实现的？
  -  新增理解Widget、Element、RenderObject  https://github.com/shenchunxing/better-flutter-developer/wiki/理解Widget、Element、RenderObject
@@ -13,20 +13,16 @@
  -  如何正确使用setState()? https://github.com/shenchunxing/better-flutter-developer/wiki/如何正确使用setState()%3F
  -  新增State的生命周期详解 https://github.com/shenchunxing/better-flutter-developer/wiki/State的生命周期详解
  -  新增Flutter是如何处理一次点击事件的? https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter是如何处理一次点击事件的%3F
- -  新增深入研究Flutter布局原理 https://github.com/shenchunxing/better-flutter-developer/wiki/深入研究Flutter布局原理
  - [Element、BuildContext和RenderObject](https://book.flutterchina.club/chapter14/element_buildcontext.html)
  - [Flutter事件机制](https://book.flutterchina.club/chapter8/hittest.html#_8-3-1-flutter-事件处理流程)
  - [手势原理和手势冲突](https://book.flutterchina.club/chapter8/gesture_conflict.html#_8-4-1-手势识别原理) 
  - [通知 Notification](https://book.flutterchina.club/chapter8/notification.html#_8-6-1-监听通知)
  - [Flutter启动流程和渲染管线](https://book.flutterchina.club/chapter14/flutter_app_startup.html)
- - [布局（Layout）过程](https://book.flutterchina.club/chapter14/layout.html)
  - [绘制（一）绘制原理及Layer](https://book.flutterchina.club/chapter14/paint.html)
  - [绘制（二）组件树绘制流程](https://book.flutterchina.club/chapter14/paint_flow.html)
  - [绘制（三）Layer 实例](https://book.flutterchina.club/chapter14/layer.html)
  - [绘制（四）Compositing](https://book.flutterchina.club/chapter14/compositing.html)
  - [深入理解BuildContext](https://juejin.cn/post/6844903777565147150)
- - [理解布局约束](https://flutter.cn/docs/development/ui/layout/constraints)
- - [花两天时间做了15个例子的解析，彻底掌握Flutter的布局原理](https://juejin.cn/post/6916157915590033421)
  - [深入进阶-Flutter导航Navigator操作解析](https://juejin.cn/post/6893699139490545672)
  - [Dart 进阶 | 深入理解方法与闭包](https://juejin.cn/post/6844904149058846734) 
  - [什么是Stream](https://juejin.cn/post/6844903686737494023)
@@ -35,7 +31,15 @@
  - [Flutter | 状态管理拓展篇——RxDart](https://juejin.cn/post/6844903700733886471)
  - [应用性能最佳实践](https://flutter.cn/docs/perf/best-practices)
 
-## 学习资源 
+## layout相关  
+ -  新增关于flutter布局的30个用例 https://github.com/shenchunxing/better-flutter-developer/blob/master/flutter_layout_article-master
+ -  新增手动实现Align https://github.com/shenchunxing/better-flutter-developer/custom_align
+ -  新增深入研究Flutter布局原理 https://github.com/shenchunxing/better-flutter-developer/wiki/深入研究Flutter布局原理
+ - [布局（Layout）过程](https://book.flutterchina.club/chapter14/layout.html)
+ - [理解布局约束](https://flutter.cn/docs/development/ui/layout/constraints)
+ - [花两天时间做了15个例子的解析，彻底掌握Flutter的布局原理](https://juejin.cn/post/6916157915590033421)
+
+## 网站 
  - [Flutter中文开发者](https://flutter.cn)
  - [Flutter中文网](https://book.flutterchina.club)
  - [老孟Flutter](http://laomengit.com)
