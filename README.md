@@ -1,5 +1,5 @@
 ## 持续更新
- -  [Flutter面试题1](https://github.com/shenchunxing/better-flutter-developer/blob/master/Flutter面试题1.md)
+ -  [Flutter知识点](https://github.com/shenchunxing/better-flutter-developer/blob/master/flutter_interview.md)
  -  新增极客时间专栏《Flutter核心技术与实战》,代码太多，需要找时间整理下 (https://github.com/cyndibaby905/flutter_core_demo)
  -  新增一个好用的登录页面 https://github.com/shenchunxing/better-flutter-developer/blob/master/login_app
  -  新增Flutter是怎么实现热重载的？https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter热重载是怎么实现的？
