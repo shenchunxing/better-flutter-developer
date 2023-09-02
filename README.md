@@ -1,5 +1,19 @@
 ## 持续更新
  -  [Flutter知识点](https://github.com/shenchunxing/better-flutter-developer/blob/master/flutter_interview.md)
+ -  新增Flutter3种数据存储方式 https://github.com/shenchunxing/better-flutter-developer/wiki/3种数据存储方式
+ -  新增Flutter4种跨组件传递数据的方式 https://github.com/shenchunxing/better-flutter-developer/wiki/4种跨组件传递数据的方式
+ -  新增Flutter区别其他跨平台的关键技术 https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter区别其他跨平台的关键技术
+ -  新增Flutter的组件化和平台化 https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter的组件化和平台化
+ -  新增Flutter调试技巧 https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter调试技巧
+ -  新增单线程模型为什么可以保证UI运行流畅？ https://github.com/shenchunxing/better-flutter-developer/wiki/单线程模型为什么可以保证UI运行流畅？
+ -  新增在Dart层兼容iOS和Android平台的特定实现 https://github.com/shenchunxing/better-flutter-developer/wiki/在Dart层兼容iOS和Android平台的特定实现
+ -  新增在原生项目中嵌入Flutter模块用于混合开发 https://github.com/shenchunxing/better-flutter-developer/wiki/在原生项目中嵌入Flutter模块用于混合开发
+ -  新增实现Flutter的动画效果 https://github.com/shenchunxing/better-flutter-developer/wiki/实现Flutter的动画效果
+ -  检测并优化FlutterApp的整体性能表现 https://github.com/shenchunxing/better-flutter-developer/wiki/检测并优化FlutterApp的整体性能表现
+ -  线上出现问题，该如何做好异常捕获与信息采集 https://github.com/shenchunxing/better-flutter-developer/wiki/线上出现问题，该如何做好异常捕获与信息采集
+ -  组合和自绘的选择问题 https://github.com/shenchunxing/better-flutter-developer/wiki/组合和自绘的选择问题
+ -  衡量FlutterApp线上质量的三个指标 https://github.com/shenchunxing/better-flutter-developer/wiki/衡量FlutterApp线上质量的三个指标
+ -  配置Flutter项目中的开发环境、发布环境 https://github.com/shenchunxing/better-flutter-developer/wiki/配置Flutter项目中的开发环境、发布环境
  -  新增极客时间专栏《Flutter核心技术与实战》,代码太多，需要找时间整理下 (https://github.com/cyndibaby905/flutter_core_demo)
  -  新增一个好用的登录页面 https://github.com/shenchunxing/better-flutter-developer/blob/master/login_app
  -  新增Flutter是怎么实现热重载的？https://github.com/shenchunxing/better-flutter-developer/wiki/Flutter热重载是怎么实现的？
@@ -94,22 +108,3 @@
 - [logger](https://pub.flutter-io.cn/packages/logger) - 打印日志
 - [retrofit](https://pub.flutter-io.cn/packages/retrofit) - 是一个dio客户端生成器使用source_gen和灵感来自Chopper和Retrofit
 - [equatable](https://pub.flutter-io.cn/packages/equatable) - 帮助实现基于值的相等性，而不需要显式地重写==和hashCode。
-
-
-## 快捷键
-```
-1、stless  快速创建StatelessWidget的子类
-2、stful  快速创建StatefulWidget的子类
-3、command + option + B，查看抽象类或方法的子类实现
-4、command + option + T，有时需要在一些代码外面加上if、for、while等代码，快速调出环绕代码
-5、command + option + W，抽取Widget
-6、command + option + M，抽取代码
-7、command + option + L，格式化代码
-8、command + shift + N，新建Dart文件【Scratch File 快捷键command + shift + N删除】
-9、command + shift + Enter，if后面自动加(){}
-10、commond + d 快速复制一行
-11、option + shift + 上下键，移动代码
-12、option + enter，将widget自动包裹一层widget或删除这层widget
-StatelessWidget转StatefulWidget
-快速导包
-```
